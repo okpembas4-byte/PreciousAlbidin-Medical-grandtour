@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PRECIOUS ALBIDIN Grand Tours – Turkey</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --red: #C0392B;
+    --red-dark: #922B21;
+    --red-light: #E74C3C;
+    --orange: #E67E22;
+    --orange-light: #F39C12;
+    --orange-pale: #FDEBD0;
+    --gold: #D4AC0D;
+    --cream: #FDF6EC;
+    --dark: #1A0A00;
+    --text: #3D1A00;
+    --white: #FFFFFF;
+    --shadow: 0 8px 40px rgba(192,57,43,0.18);
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Raleway', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    overflow-x: hidden;
+  }
+
+  /* ── NAVIGATION ─────────────────────────────────────────── */
+  nav {
+    position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;
+    background: rgba(26,10,0,0.96);
+    backdrop-filter: blur(10px);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 5vw; height: 70px;
+    border-bottom: 2px solid var(--orange);
+  }
+  .nav-logo {
+    display: flex; align-items: center; gap: 12px; text-decoration: none;
+  }
+  .logo-icon {
+    width: 44px; height: 44px; border-radius: 50%;
+    background: linear-gradient(135deg, var(--red), var(--orange));
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px; color: #fff; font-weight: 900; font-family: 'Playfair Display', serif;
+    box-shadow: 0 0 16px rgba(230,126,34,0.5);
+    flex-shrink: 0;
+  }
+  .logo-text {
+    display: flex; flex-direction: column; line-height: 1.1;
+  }
+  .logo-text span:first-child {
+    font-family: 'Playfair Display', serif;
+    font-size: 13px; font-weight: 700;
+    color: var(--orange-light); letter-spacing: 2px; text-transform: uppercase;
+  }
+  .logo-text span:last-child {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px; font-weight: 900;
+    color: #fff; letter-spacing: 1px;
+  }
+  .nav-links { display: flex; gap: 28px; list-style: none; }
+  .nav-links a {
+    color: #ddd; text-decoration: none; font-size: 13px; font-weight: 600;
+    letter-spacing: 1.5px; text-transform: uppercase; transition: color .3s;
+  }
+  .nav-links a:hover { color: var(--orange-light); }
+  .nav-cta {
+    background: linear-gradient(90deg, var(--red), var(--orange));
+    color: #fff; border: none; padding: 10px 22px; border-radius: 30px;
+    font-family: 'Raleway', sans-serif; font-size: 13px; font-weight: 700;
+    letter-spacing: 1px; cursor: pointer; text-decoration: none;
+    transition: transform .2s, box-shadow .2s;
+    white-space: nowrap;
+  }
+  .nav-cta:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(192,57,43,0.5); }
+  .burger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+  .burger span { width: 26px; height: 2px; background: var(--orange); border-radius: 2px; transition: .3s; }
+
+  /* ── HERO ────────────────────────────────────────────────── */
+  .hero {
+    min-height: 100vh; position: relative; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; text-align: center;
+    overflow: hidden; padding: 100px 5vw 60px;
+    background: var(--dark);
+  }
+  .hero-bg {
+    position: absolute; inset: 0; z-index: 0;
+    background: url('https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1600&q=80') center/cover no-repeat;
+    opacity: 0.35;
+  }
+  .hero-overlay {
+    position: absolute; inset: 0; z-index: 1;
+    background: linear-gradient(180deg, rgba(26,10,0,0.6) 0%, rgba(192,57,43,0.25) 50%, rgba(26,10,0,0.85) 100%);
+  }
+  .hero-content { position: relative; z-index: 2; max-width: 850px; }
+  .hero-badge {
+    display: inline-block; background: rgba(230,126,34,0.25); border: 1px solid var(--orange);
+    color: var(--orange-light); font-size: 12px; font-weight: 700; letter-spacing: 3px;
+    text-transform: uppercase; padding: 6px 20px; border-radius: 30px; margin-bottom: 24px;
+    animation: fadeUp .8s ease both;
+  }
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(36px, 7vw, 82px);
+    font-weight: 900; color: #fff; line-height: 1.1;
+    text-shadow: 0 4px 30px rgba(0,0,0,0.7);
+    animation: fadeUp .8s ease .15s both;
+  }
+  .hero h1 em { font-style: italic; color: var(--orange-light); }
+  .hero p {
+    font-size: clamp(15px, 2.5vw, 20px); color: rgba(255,255,255,0.85);
+    font-weight: 300; line-height: 1.7; margin: 22px 0 38px;
+    animation: fadeUp .8s ease .3s both;
+  }
+  .hero-btns {
+    display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;
+    animation: fadeUp .8s ease .45s both;
+  }
+  .btn-primary {
+    background: linear-gradient(90deg, var(--red), var(--orange));
+    color: #fff; border: none; padding: 16px 36px; border-radius: 50px;
+    font-family: 'Raleway', sans-serif; font-size: 15px; font-weight: 700;
+    letter-spacing: 1px; cursor: pointer; text-decoration: none;
+    box-shadow: 0 8px 28px rgba(192,57,43,0.5); transition: transform .2s, box-shadow .2s;
+  }
+  .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 14px 36px rgba(192,57,43,0.6); }
+  .btn-outline {
+    background: transparent; color: #fff;
+    border: 2px solid rgba(255,255,255,0.5);
+    padding: 14px 34px; border-radius: 50px;
+    font-family: 'Raleway', sans-serif; font-size: 15px; font-weight: 600;
+    cursor: pointer; text-decoration: none; transition: all .3s;
+  }
+  .btn-outline:hover { border-color: var(--orange); color: var(--orange-light); }
+  .hero-stats {
+    position: relative; z-index: 2; display: flex; gap: clamp(20px, 6vw, 70px);
+    margin-top: 50px; animation: fadeUp .8s ease .6s both;
+  }
+  .stat { text-align: center; }
+  .stat-num {
+    font-family: 'Playfair Display', serif; font-size: clamp(28px, 5vw, 46px);
+    font-weight: 900; color: var(--orange-light);
+  }
+  .stat-label { font-size: 12px; font-weight: 600; letter-spacing: 2px; color: rgba(255,255,255,0.6); text-transform: uppercase; }
+  .scroll-arrow {
+    position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%);
+    z-index: 2; animation: bounce 2s infinite;
+    color: rgba(255,255,255,0.5); font-size: 28px; text-decoration: none;
+  }
+
+  /* ── SECTIONS ────────────────────────────────────────────── */
+  section { padding: clamp(60px, 8vw, 110px) 5vw; }
+  .section-label {
+    font-size: 12px; font-weight: 700; letter-spacing: 4px; text-transform: uppercase;
+    color: var(--red); margin-bottom: 12px;
+  }
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(28px, 5vw, 50px); font-weight: 900; color: var(--dark); line-height: 1.2;
+  }
+  .section-title span { color: var(--red); }
+  .section-sub {
+    font-size: 16px; color: #666; font-weight: 400; line-height: 1.8;
+    max-width: 600px; margin-top: 14px;
+  }
+  .section-head { max-width: 1100px; margin: 0 auto 50px; }
+  .divider {
+    width: 60px; height: 4px; border-radius: 2px;
+    background: linear-gradient(90deg, var(--red), var(--orange));
+    margin: 16px 0;
+  }
+
+  /* ── WHY US ──────────────────────────────────────────────── */
+  #why { background: var(--dark); }
+  #why .section-title { color: #fff; }
+  #why .section-sub { color: rgba(255,255,255,0.6); }
+  .why-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 28px; max-width: 1100px; margin: 0 auto;
+  }
+  .why-card {
+    background: rgba(255,255,255,0.04); border: 1px solid rgba(230,126,34,0.2);
+    border-radius: 18px; padding: 36px 28px; text-align: center;
+    transition: transform .3s, border-color .3s, box-shadow .3s;
+  }
+  .why-card:hover {
+    transform: translateY(-8px); border-color: var(--orange);
+    box-shadow: 0 16px 40px rgba(192,57,43,0.3);
+  }
+  .why-icon { font-size: 44px; margin-bottom: 18px; }
+  .why-card h3 { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--orange-light); margin-bottom: 10px; }
+  .why-card p { font-size: 14px; color: rgba(255,255,255,0.6); line-height: 1.7; }
+
+  /* ── CITIES ──────────────────────────────────────────────── */
+  #cities { background: var(--cream); }
+  .cities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px; max-width: 1200px; margin: 0 auto;
+  }
+  .city-card {
+    position: relative; border-radius: 20px; overflow: hidden;
+    height: 340px; cursor: pointer;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+    transition: transform .4s, box-shadow .4s;
+  }
+  .city-card:hover { transform: translateY(-8px) scale(1.01); box-shadow: 0 20px 50px rgba(0,0,0,0.35); }
+  .city-card.large { grid-column: span 2; height: 420px; }
+  .city-img {
+    width: 100%; height: 100%; object-fit: cover;
+    transition: transform .6s ease;
+  }
+  .city-card:hover .city-img { transform: scale(1.08); }
+  .city-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(180deg, transparent 40%, rgba(26,10,0,0.9) 100%);
+  }
+  .city-info { position: absolute; bottom: 0; left: 0; right: 0; padding: 24px; }
+  .city-tag {
+    display: inline-block; background: var(--red); color: #fff;
+    font-size: 10px; font-weight: 700; letter-spacing: 2px;
+    text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 8px;
+  }
+  .city-name {
+    font-family: 'Playfair Display', serif; font-size: 26px; font-weight: 900;
+    color: #fff; line-height: 1.2;
+  }
+  .city-desc { font-size: 13px; color: rgba(255,255,255,0.75); margin-top: 6px; line-height: 1.5; }
+
+  /* ── ISTANBUL GALLERY ────────────────────────────────────── */
+  #istanbul { background: linear-gradient(135deg, #1A0A00 0%, #3D1000 100%); }
+  #istanbul .section-title { color: #fff; }
+  #istanbul .section-sub { color: rgba(255,255,255,0.6); }
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 16px; max-width: 1100px; margin: 0 auto;
+  }
+  .gal-item {
+    border-radius: 14px; overflow: hidden; position: relative;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    transition: transform .3s;
+  }
+  .gal-item:hover { transform: scale(1.03); z-index: 2; }
+  .gal-item.tall { grid-row: span 2; }
+  .gal-item.wide { grid-column: span 2; }
+  .gal-item img { width: 100%; height: 100%; object-fit: cover; min-height: 200px; display: block; }
+  .gal-caption {
+    position: absolute; bottom: 0; left: 0; right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.7));
+    color: #fff; font-size: 13px; font-weight: 600; padding: 20px 14px 12px;
+  }
+
+  /* ── SERVICES ────────────────────────────────────────────── */
+  #services { background: #fff; }
+  .services-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px; max-width: 1100px; margin: 0 auto;
+  }
+  .service-card {
+    border-radius: 20px; overflow: hidden; position: relative;
+    box-shadow: var(--shadow); transition: transform .3s;
+    background: var(--cream);
+  }
+  .service-card:hover { transform: translateY(-6px); }
+  .service-img-wrap { height: 200px; overflow: hidden; }
+  .service-img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s; }
+  .service-card:hover .service-img-wrap img { transform: scale(1.08); }
+  .service-body { padding: 24px; }
+  .service-icon { font-size: 32px; margin-bottom: 10px; }
+  .service-body h3 { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--dark); margin-bottom: 8px; }
+  .service-body p { font-size: 14px; color: #666; line-height: 1.7; }
+  .service-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
+  .tag {
+    font-size: 11px; font-weight: 600; letter-spacing: 1px;
+    background: var(--orange-pale); color: var(--red);
+    padding: 4px 10px; border-radius: 20px;
+  }
+
+  /* ── TESTIMONIALS ────────────────────────────────────────── */
+  #testimonials { background: var(--orange-pale); }
+  .testimonials-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px; max-width: 1100px; margin: 0 auto;
+  }
+  .testi-card {
+    background: #fff; border-radius: 18px; padding: 32px 28px;
+    box-shadow: 0 4px 20px rgba(192,57,43,0.08);
+    position: relative;
+  }
+  .testi-card::before {
+    content: '"'; font-family: 'Playfair Display', serif;
+    font-size: 80px; color: var(--orange-pale); position: absolute; top: 10px; left: 20px;
+    line-height: 1;
+  }
+  .stars { color: var(--orange); font-size: 16px; margin-bottom: 14px; }
+  .testi-card p { font-size: 15px; line-height: 1.8; color: #555; font-style: italic; }
+  .testi-author { margin-top: 20px; display: flex; align-items: center; gap: 12px; }
+  .author-avatar {
+    width: 44px; height: 44px; border-radius: 50%;
+    background: linear-gradient(135deg, var(--red), var(--orange));
+    display: flex; align-items: center; justify-content: center;
+    color: #fff; font-weight: 700; font-size: 16px; flex-shrink: 0;
+  }
+  .author-info strong { display: block; font-size: 14px; color: var(--dark); }
+  .author-info span { font-size: 12px; color: #999; }
+
+  /* ── CONTACT / BOOKING ───────────────────────────────────── */
+  #contact {
+    background: linear-gradient(135deg, var(--dark) 0%, #3D1000 100%);
+    position: relative; overflow: hidden;
+  }
+  #contact::before {
+    content: ''; position: absolute; inset: 0;
+    background: url('https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&q=60') center/cover no-repeat;
+    opacity: 0.07;
+  }
+  .contact-wrapper {
+    position: relative; z-index: 1;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 60px;
+    max-width: 1100px; margin: 0 auto; align-items: start;
+  }
+  .contact-info .section-title { color: #fff; }
+  .contact-info .section-sub { color: rgba(255,255,255,0.65); }
+  .contact-items { margin-top: 36px; display: flex; flex-direction: column; gap: 22px; }
+  .contact-item { display: flex; gap: 16px; align-items: flex-start; }
+  .c-icon {
+    width: 46px; height: 46px; border-radius: 12px; flex-shrink: 0;
+    background: linear-gradient(135deg, var(--red), var(--orange));
+    display: flex; align-items: center; justify-content: center; font-size: 20px;
+  }
+  .c-text strong { display: block; color: var(--orange-light); font-size: 13px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+  .c-text a, .c-text span { color: rgba(255,255,255,0.8); font-size: 15px; text-decoration: none; display: block; line-height: 1.6; }
+  .c-text a:hover { color: var(--orange-light); }
+  .whatsapp-btn {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: #25D366; color: #fff; padding: 14px 26px; border-radius: 50px;
+    text-decoration: none; font-weight: 700; font-size: 15px;
+    margin-top: 32px; transition: transform .2s, box-shadow .2s;
+    box-shadow: 0 6px 20px rgba(37,211,102,0.4);
+  }
+  .whatsapp-btn:hover { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(37,211,102,0.5); }
+
+  /* FORM */
+  .contact-form {
+    background: rgba(255,255,255,0.05); border: 1px solid rgba(230,126,34,0.2);
+    backdrop-filter: blur(10px); border-radius: 24px; padding: 40px 36px;
+  }
+  .form-title {
+    font-family: 'Playfair Display', serif; font-size: 26px; color: #fff; margin-bottom: 8px;
+  }
+  .form-sub { font-size: 14px; color: rgba(255,255,255,0.5); margin-bottom: 28px; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .form-group { margin-bottom: 18px; display: flex; flex-direction: column; }
+  .form-group label { font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--orange-light); margin-bottom: 8px; }
+  .form-group input, .form-group select, .form-group textarea {
+    background: rgba(255,255,255,0.07); border: 1px solid rgba(230,126,34,0.25);
+    border-radius: 10px; padding: 13px 16px; color: #fff;
+    font-family: 'Raleway', sans-serif; font-size: 14px;
+    outline: none; transition: border-color .3s, background .3s;
+    width: 100%;
+  }
+  .form-group input::placeholder, .form-group textarea::placeholder { color: rgba(255,255,255,0.3); }
+  .form-group select option { background: var(--dark); color: #fff; }
+  .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    border-color: var(--orange); background: rgba(255,255,255,0.1);
+  }
+  .form-group textarea { resize: vertical; min-height: 100px; }
+  .submit-btn {
+    width: 100%; padding: 16px; border: none; border-radius: 50px; cursor: pointer;
+    background: linear-gradient(90deg, var(--red), var(--orange));
+    color: #fff; font-family: 'Raleway', sans-serif; font-size: 16px; font-weight: 700;
+    letter-spacing: 1px; transition: transform .2s, box-shadow .2s;
+    box-shadow: 0 8px 24px rgba(192,57,43,0.4);
+  }
+  .submit-btn:hover { transform: translateY(-3px); box-shadow: 0 14px 32px rgba(192,57,43,0.6); }
+  .form-note { font-size: 12px; color: rgba(255,255,255,0.4); text-align: center; margin-top: 14px; }
+  .success-msg {
+    display: none; text-align: center; padding: 20px; background: rgba(37,211,102,0.15);
+    border: 1px solid #25D366; border-radius: 12px; color: #25D366;
+    font-weight: 600; margin-top: 16px; font-size: 15px;
+  }
+
+  /* ── FOOTER ──────────────────────────────────────────────── */
+  footer {
+    background: #0D0500; padding: 50px 5vw 28px;
+    border-top: 2px solid rgba(230,126,34,0.2);
+  }
+  .footer-top {
+    display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px;
+    max-width: 1100px; margin: 0 auto 40px;
+  }
+  .footer-brand p { font-size: 14px; color: rgba(255,255,255,0.5); line-height: 1.8; margin-top: 14px; max-width: 340px; }
+  .footer-col h4 { font-family: 'Playfair Display', serif; font-size: 16px; color: var(--orange-light); margin-bottom: 18px; }
+  .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .footer-col ul a { color: rgba(255,255,255,0.5); text-decoration: none; font-size: 14px; transition: color .2s; }
+  .footer-col ul a:hover { color: var(--orange-light); }
+  .footer-bottom {
+    max-width: 1100px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    border-top: 1px solid rgba(255,255,255,0.07); padding-top: 24px;
+    flex-wrap: wrap; gap: 12px;
+  }
+  .footer-bottom p { font-size: 13px; color: rgba(255,255,255,0.3); }
+  .footer-bottom span { color: var(--orange); }
+  .social-links { display: flex; gap: 14px; }
+  .social-link {
+    width: 36px; height: 36px; border-radius: 50%;
+    border: 1px solid rgba(230,126,34,0.3);
+    display: flex; align-items: center; justify-content: center;
+    color: rgba(255,255,255,0.5); font-size: 14px; text-decoration: none;
+    transition: all .3s;
+  }
+  .social-link:hover { background: var(--orange); border-color: var(--orange); color: #fff; }
+
+  /* ── FLOATING WHATSAPP ───────────────────────────────────── */
+  .float-wa {
+    position: fixed; bottom: 28px; right: 28px; z-index: 999;
+    width: 58px; height: 58px; border-radius: 50%;
+    background: #25D366; display: flex; align-items: center; justify-content: center;
+    font-size: 28px; text-decoration: none;
+    box-shadow: 0 6px 20px rgba(37,211,102,0.5);
+    transition: transform .3s, box-shadow .3s;
+    animation: pulse-wa 2.5s infinite;
+  }
+  .float-wa:hover { transform: scale(1.1); box-shadow: 0 12px 30px rgba(37,211,102,0.7); }
+
+  /* ── ANIMATIONS ──────────────────────────────────────────── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes bounce {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50%       { transform: translateX(-50%) translateY(10px); }
+  }
+  @keyframes pulse-wa {
+    0%, 100% { box-shadow: 0 6px 20px rgba(37,211,102,0.5); }
+    50%       { box-shadow: 0 6px 30px rgba(37,211,102,0.9); }
+  }
+
+  /* ── MOBILE ──────────────────────────────────────────────── */
+  @media (max-width: 900px) {
+    .contact-wrapper { grid-template-columns: 1fr; gap: 40px; }
+    .footer-top { grid-template-columns: 1fr 1fr; }
+    .gallery-grid { grid-template-columns: 1fr 1fr; }
+    .gal-item.tall { grid-row: span 1; }
+    .gal-item.wide { grid-column: span 2; }
+  }
+  @media (max-width: 720px) {
+    .nav-links, .nav-cta { display: none; }
+    .burger { display: flex; }
+    .city-card.large { grid-column: span 1; height: 300px; }
+    .form-row { grid-template-columns: 1fr; }
+    .footer-top { grid-template-columns: 1fr; }
+    .gallery-grid { grid-template-columns: 1fr; }
+    .gal-item.wide { grid-column: span 1; }
+    .hero-stats { gap: 28px; }
+    .nav-menu-open .nav-links {
+      display: flex; flex-direction: column; position: fixed;
+      top: 70px; left: 0; right: 0; background: rgba(26,10,0,0.98);
+      padding: 30px 5vw; gap: 20px; z-index: 999;
+    }
+    .nav-menu-open .nav-cta { display: block; margin-top: 10px; width: fit-content; }
+  }
+  @media (max-width: 500px) {
+    .contact-form { padding: 28px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/905079851260" target="_blank" class="float-wa" title="Chat on WhatsApp">💬</a>
+
+<!-- NAVIGATION -->
+<nav id="mainNav">
+  <a href="#" class="nav-logo">
+    <div class="logo-icon">P</div>
+    <div class="logo-text">
+      <span>Precious Albidin</span>
+      <span>Grand Tours</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#cities">Cities</a></li>
+    <li><a href="#istanbul">Istanbul</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Book Now</a>
+  <div class="burger" id="burger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge">✦ Your Trusted Turkey Guide ✦</div>
+    <h1>Discover the Magic of <em>Turkey</em> with Us</h1>
+    <p>From the minarets of Istanbul to the turquoise shores of Bodrum — we handle medical, tourism & lifestyle journeys across Turkey's most extraordinary destinations.</p>
+    <div class="hero-btns">
+      <a href="#services" class="btn-primary">Explore Services</a>
+      <a href="#contact" class="btn-outline">Get Free Consultation</a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="stat"><div class="stat-num">500+</div><div class="stat-label">Happy Clients</div></div>
+    <div class="stat"><div class="stat-num">5</div><div class="stat-label">Cities Covered</div></div>
+    <div class="stat"><div class="stat-num">10+</div><div class="stat-label">Years Experience</div></div>
+    <div class="stat"><div class="stat-num">24/7</div><div class="stat-label">Support</div></div>
+  </div>
+  <a href="#why" class="scroll-arrow">↓</a>
+</section>
+
+<!-- WHY US -->
+<section id="why">
+  <div class="section-head" style="max-width:1100px;margin:0 auto 50px;">
+    <p class="section-label">Why Choose Us</p>
+    <div class="divider"></div>
+    <h2 class="section-title" style="color:#fff;">Your Perfect <span>Turkey</span> Experience</h2>
+    <p class="section-sub">We are more than a travel agency — we are your personal concierge for life-changing experiences in Turkey.</p>
+  </div>
+  <div class="why-grid">
+    <div class="why-card">
+      <div class="why-icon">🏥</div>
+      <h3>Medical Excellence</h3>
+      <p>Partner hospitals offering hair transplants, dental, aesthetics & more — with certified surgeons and premium care.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">🗺️</div>
+      <h3>Expert Guidance</h3>
+      <p>Personalised itineraries crafted by locals who know every hidden gem in Istanbul, Antalya, Bursa and beyond.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">✈️</div>
+      <h3>Full Package</h3>
+      <p>Airport transfers, hotel bookings, hospital appointments — we handle everything so you travel stress-free.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">💬</div>
+      <h3>Multilingual Team</h3>
+      <p>Our team communicates with you in your language, on WhatsApp, email or phone — available 24 hours a day.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">🔒</div>
+      <h3>Confidential & Safe</h3>
+      <p>Your personal details and medical information are handled with the utmost privacy and discretion.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">⭐</div>
+      <h3>Trusted Reviews</h3>
+      <p>Hundreds of satisfied clients from across the globe trust us for their Turkey journey every year.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CITIES -->
+<section id="cities">
+  <div class="section-head">
+    <p class="section-label">Destinations</p>
+    <div class="divider"></div>
+    <h2 class="section-title">Turkey's <span>Most Beautiful</span> Cities</h2>
+    <p class="section-sub">We guide you through Turkey's most iconic and vibrant cities — each with its own soul and story.</p>
+  </div>
+  <div class="cities-grid">
+    <div class="city-card large">
+      <img class="city-img" src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=900&q=80" alt="Istanbul" loading="lazy">
+      <div class="city-overlay"></div>
+      <div class="city-info">
+        <span class="city-tag">⭐ Most Popular</span>
+        <div class="city-name">Istanbul</div>
+        <p class="city-desc">Where East meets West — mosques, bazaars, Bosphorus cruises & world-class hospitals.</p>
+      </div>
+    </div>
+    <div class="city-card">
+      <img class="city-img" src="https://images.unsplash.com/photo-1602872030490-4a484a7b3ba6?w=700&q=80" alt="Antalya" loading="lazy">
+      <div class="city-overlay"></div>
+      <div class="city-info">
+        <span class="city-tag">🌊 Beach Paradise</span>
+        <div class="city-name">Antalya</div>
+        <p class="city-desc">Crystal waters, ancient ruins and Mediterranean warmth year-round.</p>
+      </div>
+    </div>
+    <div class="city-card">
+      <img class="city-img" src="https://images.unsplash.com/photo-1612557756940-4f9e1e46b84b?w=700&q=80" alt="Bodrum" loading="lazy">
+      <div class="city-overlay"></div>
+      <div class="city-info">
+        <span class="city-tag">🏖️ Luxury Getaway</span>
+        <div class="city-name">Bodrum</div>
+        <p class="city-desc">Aegean elegance — white-washed villages, yachts and turquoise bays.</p>
+      </div>
+    </div>
+    <div class="city-card">
+      <img class="city-img" src="https://images.unsplash.com/photo-1639751017792-3b93e8d1a2e8?w=700&q=80" alt="Bursa" loading="lazy">
+      <div class="city-overlay"></div>
+      <div class="city-info">
+        <span class="city-tag">🏔️ Ottoman Heritage</span>
+        <div class="city-name">Bursa</div>
+        <p class="city-desc">The first Ottoman capital — silk bazaars, thermal baths and Uludağ mountain.</p>
+      </div>
+    </div>
+    <div class="city-card">
+      <img class="city-img" src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=700&q=80" alt="Izmir" loading="lazy">
+      <div class="city-overlay"></div>
+      <div class="city-info">
+        <span class="city-tag">🌅 Coastal Gem</span>
+        <div class="city-name">İzmir</div>
+        <p class="city-desc">A vibrant, modern Aegean city with ancient Ephesus at its doorstep.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ISTANBUL GALLERY -->
+<section id="istanbul">
+  <div class="section-head" style="max-width:1100px;margin:0 auto 50px;">
+    <p class="section-label">The City of Two Continents</p>
+    <div class="divider"></div>
+    <h2 class="section-title" style="color:#fff;">Istanbul — <span>Iconic Highlights</span></h2>
+    <p class="section-sub" style="color:rgba(255,255,255,0.6);">From Hagia Sophia to the Grand Bazaar, let us show you Istanbul's most breathtaking landmarks.</p>
+  </div>
+  <div class="gallery-grid">
+    <div class="gal-item tall">
+      <img src="https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=600&q=80" alt="Hagia Sophia" loading="lazy">
+      <div class="gal-caption">Hagia Sophia</div>
+    </div>
+    <div class="gal-item">
+      <img src="https://images.unsplash.com/photo-1569949381669-ecf31ae8e613?w=600&q=80" alt="Blue Mosque" loading="lazy">
+      <div class="gal-caption">Blue Mosque</div>
+    </div>
+    <div class="gal-item">
+      <img src="https://images.unsplash.com/photo-1512632578888-169bbbc64f33?w=600&q=80" alt="Bosphorus" loading="lazy">
+      <div class="gal-caption">Bosphorus Strait</div>
+    </div>
+    <div class="gal-item wide">
+      <img src="https://images.unsplash.com/photo-1504893524553-b855bce32c67?w=900&q=80" alt="Grand Bazaar" loading="lazy" style="min-height:220px;">
+      <div class="gal-caption">Grand Bazaar</div>
+    </div>
+    <div class="gal-item">
+      <img src="https://images.unsplash.com/photo-1596716028164-3d02eec680ad?w=600&q=80" alt="Galata Tower" loading="lazy">
+      <div class="gal-caption">Galata Tower</div>
+    </div>
+    <div class="gal-item">
+      <img src="https://images.unsplash.com/photo-1590069261209-f8e9b8642343?w=600&q=80" alt="Topkapi Palace" loading="lazy">
+      <div class="gal-caption">Topkapı Palace</div>
+    </div>
+    <div class="gal-item">
+      <img src="https://images.unsplash.com/photo-1574664406882-a3012b70c24c?w=600&q=80" alt="Istanbul Street" loading="lazy">
+      <div class="gal-caption">Istanbul Streets</div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-head">
+    <p class="section-label">Our Expertise</p>
+    <div class="divider"></div>
+    <h2 class="section-title">Medical & Tourism <span>Services</span></h2>
+    <p class="section-sub">Whether you're here to heal, explore or both — we have the perfect package waiting for you.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-img-wrap">
+        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&q=80" alt="Hair Transplant" loading="lazy">
+      </div>
+      <div class="service-body">
+        <div class="service-icon">💆</div>
+        <h3>Hair Transplant</h3>
+        <p>Turkey is the world capital of hair restoration. We connect you with JCI-accredited clinics offering FUE, DHI & Sapphire techniques at unbeatable prices.</p>
+        <div class="service-tags">
+          <span class="tag">FUE / DHI</span>
+          <span class="tag">Certified Clinics</span>
+          <span class="tag">All-Inclusive</span>
+        </div>
+      </div>
+    </div>
+    <div class="service-card">
+      <div class="service-img-wrap">
+        <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=600&q=80" alt="Dental Treatment" loading="lazy">
+      </div>
+      <div class="service-body">
+        <div class="service-icon">🦷</div>
+        <h3>Dental Treatment</h3>
+        <p>Veneers, implants, Zirconia crowns and full Hollywood smile makeovers — at a fraction of European prices, with expert cosmetic dentists.</p>
+        <div class="service-tags">
+          <span class="tag">Veneers</span>
+          <span class="tag">Implants</span>
+          <span class="tag">Hollywood Smile</span>
+        </div>
+      </div>
+    </div>
+    <div class="service-card">
+      <div class="service-img-wrap">
+        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=600&q=80" alt="Aesthetics" loading="lazy">
+      </div>
+      <div class="service-body">
+        <div class="service-icon">✨</div>
+        <h3>Aesthetic Treatments</h3>
+        <p>Rhinoplasty, liposuction, tummy tuck, BBL and more — performed by board-certified plastic surgeons in state-of-the-art Istanbul clinics.</p>
+        <div class="service-tags">
+          <span class="tag">Rhinoplasty</span>
+          <span class="tag">BBL</span>
+          <span class="tag">Body Contouring</span>
+        </div>
+      </div>
+    </div>
+    <div class="service-card">
+      <div class="service-img-wrap">
+        <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=600&q=80" alt="Luxury Hotel" loading="lazy">
+      </div>
+      <div class="service-body">
+        <div class="service-icon">🏨</div>
+        <h3>Luxury Hotel & Tours</h3>
+        <p>5-star hotels, private Bosphorus cruises, hot air balloon rides in Cappadocia, ancient ruins tours — we craft memories that last forever.</p>
+        <div class="service-tags">
+          <span class="tag">5-Star Hotels</span>
+          <span class="tag">Private Tours</span>
+          <span class="tag">Airport Transfer</span>
+        </div>
+      </div>
+    </div>
+    <div class="service-card">
+      <div class="service-img-wrap">
+        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&q=80" alt="Eye Treatment" loading="lazy">
+      </div>
+      <div class="service-body">
+        <div class="service-icon">👁️</div>
+        <h3>Eye & Laser Surgery</h3>
+        <p>LASIK, PRK and premium lens replacement — clear vision with world-class ophthalmology specialists in Istanbul's top eye hospitals.</p>
+        <div class="service-tags">
+          <span class="tag">LASIK</span>
+          <span class="tag">Lens Replacement</span>
+          <span class="tag">Expert Surgeons</span>
+        </div>
+      </div>
+    </div>
+    <div class="service-card">
+      <div class="service-img-wrap">
+        <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=600&q=80" alt="Wellness Spa" loading="lazy">
+      </div>
+      <div class="service-body">
+        <div class="service-icon">🧖</div>
+        <h3>Wellness & Spa</h3>
+        <p>Traditional Turkish hammams, thermal springs in Bursa, and world-class spa retreats — rejuvenate your body and soul in Turkey.</p>
+        <div class="service-tags">
+          <span class="tag">Turkish Hammam</span>
+          <span class="tag">Thermal Baths</span>
+          <span class="tag">Luxury Spa</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="section-head">
+    <p class="section-label">Client Voices</p>
+    <div class="divider"></div>
+    <h2 class="section-title">What Our <span>Clients</span> Say</h2>
+    <p class="section-sub">Real stories from real people who trusted us with their Turkey journey.</p>
+  </div>
+  <div class="testimonials-grid">
+    <div class="testi-card">
+      <div class="stars">★★★★★</div>
+      <p>I came for a hair transplant and left feeling like a new person. The team arranged everything — hotel, clinic, transfers. Absolutely seamless experience!</p>
+      <div class="testi-author">
+        <div class="author-avatar">A</div>
+        <div class="author-info">
+          <strong>Ahmed K.</strong>
+          <span>Dubai, UAE</span>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="stars">★★★★★</div>
+      <p>My dental veneers look incredible. The price was 4x cheaper than at home and the quality is outstanding. Precious Albidin handled every detail perfectly.</p>
+      <div class="testi-author">
+        <div class="author-avatar">S</div>
+        <div class="author-info">
+          <strong>Sophie L.</strong>
+          <span>London, UK</span>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="stars">★★★★★</div>
+      <p>The Istanbul tour was magical — Hagia Sophia, the bazaars, the Bosphorus at sunset. Our guide was knowledgeable and so warm. Cannot recommend enough!</p>
+      <div class="testi-author">
+        <div class="author-avatar">M</div>
+        <div class="author-info">
+          <strong>Maria C.</strong>
+          <span>Lagos, Nigeria</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT & BOOKING -->
+<section id="contact">
+  <div class="contact-wrapper">
+    <div class="contact-info">
+      <p class="section-label" style="color:var(--orange-light)">Get In Touch</p>
+      <div class="divider"></div>
+      <h2 class="section-title">Let's Plan Your <span>Turkey Journey</span></h2>
+      <p class="section-sub" style="color:rgba(255,255,255,0.6)">Send us your details and we'll get back to you within 24 hours with a personalised plan — completely free.</p>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="c-icon">📞</div>
+          <div class="c-text">
+            <strong>Call / WhatsApp</strong>
+            <a href="tel:+905079851260">+90 507 985 1260</a>
+            <a href="tel:+905348347581">+90 534 834 7581</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="c-icon">✉️</div>
+          <div class="c-text">
+            <strong>Email Us</strong>
+            <a href="mailto:albidinramadannyuykongi@gmail.com">albidinramadannyuykongi@gmail.com</a>
+            <a href="mailto:okpembas4@gmail.com">okpembas4@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="c-icon">📍</div>
+          <div class="c-text">
+            <strong>Based In</strong>
+            <span>Istanbul, Turkey 🇹🇷</span>
+          </div>
+        </div>
+      </div>
+      <a href="https://wa.me/905079851260?text=Hello%20Precious%20Albidin%20Grand%20Tours%2C%20I%20am%20interested%20in%20your%20services." target="_blank" class="whatsapp-btn">
+        💬 Chat on WhatsApp Now
+      </a>
+    </div>
+
+    <div class="contact-form">
+      <h3 class="form-title">Send Us a Message</h3>
+      <p class="form-sub">Fill in your details and we'll reach out to you personally.</p>
+      <form id="bookingForm" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Full Name *</label>
+            <input type="text" id="fname" placeholder="Your full name" required>
+          </div>
+          <div class="form-group">
+            <label>WhatsApp Number *</label>
+            <input type="tel" id="phone" placeholder="+1 234 567 8900" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Email Address *</label>
+          <input type="email" id="email" placeholder="your@email.com" required>
+        </div>
+        <div class="form-group">
+          <label>Country</label>
+          <input type="text" id="country" placeholder="Your country">
+        </div>
+        <div class="form-group">
+          <label>Service Interested In</label>
+          <select id="service">
+            <option value="">— Select a service —</option>
+            <option>Hair Transplant</option>
+            <option>Dental Treatment</option>
+            <option>Aesthetic Surgery</option>
+            <option>Eye / Laser Surgery</option>
+            <option>Tourism & Hotels</option>
+            <option>Wellness & Spa</option>
+            <option>Full Package (Medical + Tourism)</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Your Message</label>
+          <textarea id="message" placeholder="Tell us about your needs, questions or preferred dates..."></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send My Enquiry ✈️</button>
+        <p class="form-note">🔒 Your information is 100% confidential and never shared with third parties.</p>
+      </form>
+      <div class="success-msg" id="successMsg">
+        ✅ Thank you! Your enquiry has been sent. We'll reach out to you on WhatsApp & email within 24 hours.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="#" class="nav-logo" style="text-decoration:none;">
+        <div class="logo-icon">P</div>
+        <div class="logo-text">
+          <span>Precious Albidin</span>
+          <span>Grand Tours</span>
+        </div>
+      </a>
+      <p>Your trusted partner for medical tourism and travel experiences across Turkey's most extraordinary cities — from Istanbul to Bodrum.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#why">Why Choose Us</a></li>
+        <li><a href="#cities">Cities</a></li>
+        <li><a href="#istanbul">Istanbul Guide</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Book Now</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Our Services</h4>
+      <ul>
+        <li><a href="#services">Hair Transplant</a></li>
+        <li><a href="#services">Dental Treatment</a></li>
+        <li><a href="#services">Aesthetic Surgery</a></li>
+        <li><a href="#services">Eye Surgery</a></li>
+        <li><a href="#services">Luxury Tours</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 <span>Precious Albidin Grand Tours</span>. All rights reserved. Istanbul, Turkey 🇹🇷</p>
+    <div class="social-links">
+      <a href="https://wa.me/905079851260" target="_blank" class="social-link">💬</a>
+      <a href="mailto:albidinramadannyuykongi@gmail.com" class="social-link">✉️</a>
+      <a href="tel:+905079851260" class="social-link">📞</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Mobile menu
+  function toggleMenu() {
+    document.getElementById('mainNav').classList.toggle('nav-menu-open');
+  }
+  // Close menu on link click
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.addEventListener('click', () => {
+      document.getElementById('mainNav').classList.remove('nav-menu-open');
+    });
+  });
+
+  // Sticky nav style
+  window.addEventListener('scroll', () => {
+    const nav = document.getElementById('mainNav');
+    nav.style.boxShadow = window.scrollY > 60 ? '0 4px 30px rgba(0,0,0,0.4)' : 'none';
+  });
+
+  // Form submission — sends mailto link to both emails and opens WhatsApp
+  function handleSubmit(e) {
+    e.preventDefault();
+    const name    = document.getElementById('fname').value;
+    const phone   = document.getElementById('phone').value;
+    const email   = document.getElementById('email').value;
+    const country = document.getElementById('country').value;
+    const service = document.getElementById('service').value;
+    const msg     = document.getElementById('message').value;
+
+    const subject = encodeURIComponent('New Enquiry – Precious Albidin Grand Tours');
+    const body = encodeURIComponent(
+      `Hello,\n\nNew enquiry received:\n\nName: ${name}\nPhone/WhatsApp: ${phone}\nEmail: ${email}\nCountry: ${country}\nService: ${service}\nMessage: ${msg}\n\nKind regards`
+    );
+
+    // Open email to first address (both can be in To:)
+    const mailtoLink = `mailto:albidinramadannyuykongi@gmail.com,okpembas4@gmail.com?subject=${subject}&body=${body}`;
+    window.open(mailtoLink, '_blank');
+
+    // Also open WhatsApp with the message
+    const waMsg = encodeURIComponent(
+      `Hello Precious Albidin Grand Tours 👋\n\nMy name is ${name}.\nPhone: ${phone}\nCountry: ${country}\nService I'm interested in: ${service}\nMessage: ${msg}`
+    );
+    setTimeout(() => {
+      window.open(`https://wa.me/905079851260?text=${waMsg}`, '_blank');
+    }, 800);
+
+    // Show success
+    document.getElementById('bookingForm').style.display = 'none';
+    document.getElementById('successMsg').style.display = 'block';
+  }
+
+  // Simple scroll reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.why-card, .city-card, .service-card, .testi-card, .gal-item').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(30px)';
+    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    observer.observe(el);
+  });
+</script>
+</body>
+</html>
